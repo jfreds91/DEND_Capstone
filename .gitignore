@@ -1,0 +1,6 @@
+.ipynb_checkpoints
+dask-worker-space
+df_matches_small_pk
+df_players_pk
+*.csv
+secret.cfg
