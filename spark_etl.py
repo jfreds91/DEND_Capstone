@@ -77,6 +77,7 @@ def main():
     else:
         print('##### RUNNING IN LIVE MODE WITH FULL FILES #####')
 
+    # https://s3.us-west-2.amazonaws.com/mybucket/puppy.jpg
     match_data = f's3a://jf-dend-capstone/open-dota{test_suffix}/matches_small{test_suffix}.csv'
     match_player_data = f's3a://jf-dend-capstone/open-dota{test_suffix}/player_matches_small{test_suffix}.csv'
     match_skill_data = f's3a://jf-dend-capstone/open-dota{test_suffix}/match_skill{test_suffix}.csv'
@@ -89,3 +90,6 @@ def main():
     spark = create_spark_session()
 
     process_data(spark, match_data, match_player_data, match_skill_data, output_data)
+
+if __name__ == "__main__":
+    main()
