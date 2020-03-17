@@ -1,7 +1,7 @@
 # Data Engineering Nanodegree Capstone Project: OpenDotA ETL
 Jesse Fredrickson
 
-www.medium.com
+https://towardsdatascience.com/aws-glue-and-you-e2e4322f0805
 
 3/1/2020
 
